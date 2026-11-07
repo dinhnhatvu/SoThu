@@ -476,8 +476,6 @@ int main() {
             cin.clear();
             cin.ignore(1000, '\n');
             cout << Color::b_red << "Lua chon khong hop le!\n" << Color::reset;
-            system("pause");
-            system("cls");
             continue;
         }
 
@@ -504,13 +502,6 @@ int main() {
             cout << Color::yellow << "Dang thoat va giai phong bo nho...\n" << Color::reset;
         } else {
             cout << Color::b_red << "Lua chon khong ton tai. Vui long chon lai!\n" << Color::reset;
-        }
-
-        // Vị trí 2: Khi chưa chọn thoát (0), dừng cho người dùng xem kết quả rồi xóa sạch màn hình
-        if (luaChon != 0) {
-            cout << "\n";
-            system("pause");
-            system("cls");
         }
 
     } while (luaChon != 0);
